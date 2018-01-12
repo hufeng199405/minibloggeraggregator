@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="miniblogger-mail" target="1.5" />
+      <module name="miniblogger-mail" target="1.8" />
       <module name="miniblogger-persist" target="1.8" />
       <module name="minibloggeraggregator" target="1.5" />
     </bytecodeTargetLevel>
