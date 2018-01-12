@@ -6,10 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="minibloggeraggregator" />
+        <module name="miniblogger-mail" />
+        <module name="miniblogger-persist" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="miniblogger-mail" target="1.5" />
+      <module name="miniblogger-persist" target="1.8" />
       <module name="minibloggeraggregator" target="1.5" />
     </bytecodeTargetLevel>
   </component>
