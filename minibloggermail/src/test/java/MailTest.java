@@ -54,6 +54,8 @@ public class MailTest {
         MimeMessage[] mimeMessage = greenMail.getReceivedMessages();
 
         logger.info(mimeMessage[0].getContent().toString());
+        logger.info("xxxxx");
+        logger.info("yyyyy");
 
         Address address = mimeMessage[0].getFrom()[0];
 
