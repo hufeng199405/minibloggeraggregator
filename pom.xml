@@ -8,5 +8,11 @@
     <artifactId>miniblogger-aggregator</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <packaging>pom</packaging>
+    <name>minibloggeraggregator</name>
 
+    <modules>
+        <module>minibloggerpersist</module>
+        <module>minibloggermail</module>
+    </modules>
 </project>
