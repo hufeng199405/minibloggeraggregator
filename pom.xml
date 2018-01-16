@@ -14,5 +14,19 @@
     <modules>
         <module>minibloggerpersist</module>
         <module>minibloggermail</module>
+        <module>accountcaptcha</module>
     </modules>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus_releases</id>
+            <name>Nexus Releases Repository</name>
+            <url>http://www.hufeng.site:8081/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus_snapshots</id>
+            <name>Nexus Snapshots Repository</name>
+            <url>http://www.hufeng.site:8081/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
