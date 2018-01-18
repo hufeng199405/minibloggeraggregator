@@ -1,4 +1,4 @@
-package com.compenment.util;
+package com.compoment.util;
 
 import java.util.Random;
 

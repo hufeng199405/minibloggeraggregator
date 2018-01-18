@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/accountcaptcha/accountcaptcha.iml" filepath="$PROJECT_DIR$/accountcaptcha/accountcaptcha.iml" />
+      <module fileurl="file://$PROJECT_DIR$/accountservice/accountservice.iml" filepath="$PROJECT_DIR$/accountservice/accountservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/minibloggermail/miniblogger-mail.iml" filepath="$PROJECT_DIR$/minibloggermail/miniblogger-mail.iml" />
       <module fileurl="file://$PROJECT_DIR$/minibloggerpersist/miniblogger-persist.iml" filepath="$PROJECT_DIR$/minibloggerpersist/miniblogger-persist.iml" />
       <module fileurl="file://$PROJECT_DIR$/minibloggeraggregator.iml" filepath="$PROJECT_DIR$/minibloggeraggregator.iml" />

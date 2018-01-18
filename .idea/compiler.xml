@@ -7,12 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="accountcaptcha" />
+        <module name="accountservice" />
         <module name="miniblogger-mail" />
         <module name="miniblogger-persist" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="accountcaptcha" target="1.8" />
+      <module name="accountservice" target="1.8" />
+      <module name="comservice" target="1.5" />
       <module name="miniblogger-mail" target="1.8" />
       <module name="miniblogger-persist" target="1.8" />
       <module name="minibloggeraggregator" target="1.5" />

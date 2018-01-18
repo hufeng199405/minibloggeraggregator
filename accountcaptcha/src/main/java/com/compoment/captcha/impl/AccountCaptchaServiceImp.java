@@ -1,8 +1,7 @@
-package com.componment.captcha.impl;
+package com.compoment.captcha.impl;
 
-import com.compenment.util.RandomGenerator;
-import com.componment.captcha.AccountCaptchaService;
-import com.google.code.kaptcha.Producer;
+import com.compoment.util.RandomGenerator;
+import com.compoment.captcha.AccountCaptchaService;
 import com.google.code.kaptcha.impl.DefaultKaptcha;
 import com.google.code.kaptcha.util.Config;
 import org.apache.log4j.Logger;
@@ -85,6 +84,21 @@ public class AccountCaptchaServiceImp implements AccountCaptchaService, Initiali
 
     @Override
     public boolean validateCaptcha(String captchaKey, String captchaValue) throws Exception {
+
+        String text = this.captchaMap.get(captchaKey);
+
+        if (text == null && text == "") {
+
+            logger.error("captch key" + captchaKey + "not found");
+            throw new Exception("captch key" + captchaKey + "not found");
+        }
+
+        if (text.equals(captchaValue)) {
+
+            this.captchaMap.remove(captchaKey);
+            return true;
+        }
+
         return false;
     }
 
@@ -98,11 +112,11 @@ public class AccountCaptchaServiceImp implements AccountCaptchaService, Initiali
 
     }
 
-    public Map<String, Object> getCaptchaMap() {
+    public Map<String, String> getCaptchaMap() {
         return captchaMap;
     }
 
-    public void setCaptchaMap(Map<String, Object> captchaMap) {
+    public void setCaptchaMap(Map<String, String> captchaMap) {
         this.captchaMap = captchaMap;
     }
 

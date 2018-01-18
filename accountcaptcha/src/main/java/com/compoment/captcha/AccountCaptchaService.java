@@ -1,4 +1,4 @@
-package com.componment.captcha;
+package com.compoment.captcha;
 
 import java.util.List;
 

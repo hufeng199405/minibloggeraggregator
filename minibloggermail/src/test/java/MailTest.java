@@ -9,6 +9,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.mail.Address;
 import javax.mail.internet.MimeMessage;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 类备注：
@@ -62,5 +64,14 @@ public class MailTest {
         logger.info(address.toString());
 
         this.greenMail.stop();
+    }
+
+    public void aa(){
+
+        Map<String,Object> aa = new HashMap<>();
+
+        aa.put("aa","bb");
+
+        logger.info(aa.get("cc"));
     }
 }

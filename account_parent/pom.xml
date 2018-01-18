@@ -6,7 +6,7 @@
 
     <groupId>com.miniblogger</groupId>
     <artifactId>miniblogger-parent</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <packaging>pom</packaging>
     <name>account_parent</name>
@@ -94,4 +94,16 @@
             </plugins>
         </pluginManagement>
     </build>
+    <distributionManagement>
+        <repository>
+            <id>nexus_releases</id>
+            <name>Nexus Releases Repository</name>
+            <url>http://www.hufeng.site:8081/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>Nexus Snapshots Repository</name>
+            <url>http://www.hufeng.site:8081/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>

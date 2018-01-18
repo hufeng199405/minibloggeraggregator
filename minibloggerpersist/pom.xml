@@ -7,13 +7,15 @@
     <parent>
         <groupId>com.miniblogger</groupId>
         <artifactId>miniblogger-parent</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0</version>
         <relativePath>../account_parent/pom.xml</relativePath>
     </parent>
 
+    <packaging>jar</packaging>
+
     <groupId>com.miniblogger</groupId>
     <artifactId>miniblogger-persist</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/dom4j/dom4j -->

@@ -5,13 +5,15 @@
     <parent>
         <groupId>com.miniblogger</groupId>
         <artifactId>miniblogger-parent</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0</version>
         <relativePath>../account_parent/pom.xml</relativePath>
     </parent>
-    
+
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>account-captcha</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.google.code.kaptcha/kaptcha -->
@@ -41,4 +43,18 @@
             <artifactId>log4j</artifactId>
         </dependency>
     </dependencies>
+    <build>
+        <plugins>
+            <!-- 解决maven test命令时console出现中文乱码乱码 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.7.2</version>
+                <configuration>
+                    <forkMode>once</forkMode>
+                    <argLine>-Dfile.encoding=UTF-8</argLine>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
