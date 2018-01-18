@@ -15,8 +15,10 @@
         <module>minibloggerpersist</module>
         <module>minibloggermail</module>
         <module>accountcaptcha</module>
-        <module>comservice</module>
         <module>accountservice</module>
+        <module>comtest</module>
+        <module>comtest</module>
+        <module>comtest</module>
     </modules>
 
     <distributionManagement>

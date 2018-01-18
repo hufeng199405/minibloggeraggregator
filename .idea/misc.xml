@@ -13,6 +13,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/comservice/pom.xml" />
+        <option value="$PROJECT_DIR$/comtest/pom.xml" />
       </set>
     </option>
   </component>
